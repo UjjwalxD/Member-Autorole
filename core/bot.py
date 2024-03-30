@@ -2,7 +2,7 @@ import discord
 from discord.ext import commands 
 from discord import Intents
 import os,asyncpg, jishaku
-from config import t  
+from keys import token
 
 os.environ["JISHAKU_NO_DM_TRACEBACK"] = "True"
 os.environ["JISHAKU_HIDE"] = "True"
@@ -42,4 +42,4 @@ class Ujjwal(commands.AutoShardedBot):
 
 
 bot = Ujjwal()
-bot.run(t)
+bot.run(token)
