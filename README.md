@@ -10,14 +10,18 @@
 ```bash
 clone the repository
 git clone https://github.com/UjjwalxD/Member-Autorole
-cd Member-Autorole```
+cd Member-Autorole
+```
 
 ```bash
-run, pip install discord.py aysncpg jishaku ```
+run, pip install discord.py aysncpg jishaku
+```
 
 ```bash
-fill you bot token in keys.py```
+fill you bot token in keys.py
+```
 
 ```bash
 Run your bot using
 -> ($): python main.py
+```
