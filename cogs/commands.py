@@ -4,7 +4,7 @@ import asyncpg
 import datetime
 import time
 
-class DBBOT(commands.Cog):
+class Autoroles(commands.Cog):
     def __init__(self, bot):
         self.bot = bot 
     
@@ -112,4 +112,4 @@ class DBBOT(commands.Cog):
 
 
 async def setup(bot) -> None:
-    await bot.add_cog(DBBOT(bot))
+    await bot.add_cog(Autoroles(bot))
