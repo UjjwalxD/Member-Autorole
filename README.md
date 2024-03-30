@@ -22,6 +22,10 @@ fill you bot token in keys.py
 ```
 
 ```bash
+put your psql database url at core/bot.py line number: 27.
+```
+
+```bash
 Run your bot using
 -> ($): python main.py
 ```
