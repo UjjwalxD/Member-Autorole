@@ -29,3 +29,7 @@ put your psql database url at core/bot.py line number: 27.
 Run your bot using
 -> ($): python main.py
 ```
+
+# Support
+[Ujjwal Srivastava](https://discord.com/users/1033579545254711336)
+[Support](https://discord.gg/winkle)
