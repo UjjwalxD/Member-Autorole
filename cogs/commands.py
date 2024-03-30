@@ -73,12 +73,12 @@ class DBBOT(commands.Cog):
                 
 
 
-    async def get_default_autorole(self, guild):
+    async def guild_autorole(self, guild):
         try:
             query = "SELECT role_id FROM autorole WHERE guild_id = $1"
-            record = await self.bot.db.fetchrow(query, guild.id)
-            if record:
-                return record["role_id"]
+            res = await self.bot.db.fetchrow(query, guild.id)
+            if res:
+                return res["role_id"]
             else:
                 return None
         except Exception as e:
@@ -90,7 +90,7 @@ class DBBOT(commands.Cog):
     async def on_member_join(self, member: discord.Member):
         if member.bot:
             return        
-        default_autorole = await self.get_default_autorole(member.guild)
+        default_autorole = await self.guild_autorole(member.guild)
         if default_autorole:
             try:
                 role = member.guild.get_role(default_autorole)
