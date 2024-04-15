@@ -14,7 +14,7 @@ class Autoroles(commands.Cog):
         await ctx.send("Please, use this command properly, like; `.autorole add <role>`")
         
     @autorole.command()        
-    async def add(self, ctx, role: discord.Role):
+    async def add(self, ctx, role: discord.Role = None):
         if role is None:
             return await ctx.send("Please mention a role, `.autorole add <role>`") 
         else:
@@ -40,7 +40,7 @@ class Autoroles(commands.Cog):
                 print(e)
     
     @autorole.command()        
-    async def remove(self, ctx, role: discord.Role):
+    async def remove(self, ctx, role: discord.Role = None):
         if role is None:
             return await ctx.send("Please mention a role, `.autorole remove <role>`") 
         else:
