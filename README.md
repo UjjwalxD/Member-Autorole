@@ -1,9 +1,6 @@
 # Simple discord Autorole Bot
 **For enhancing you expirience with an autorole bot, we've made this project**
 
-# Why us?
-- We provide you better expirience using PostgreSQL DataBase.
-
 
 # Installation 
 
