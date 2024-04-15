@@ -1,6 +1,5 @@
 import discord
 from discord.ext import commands 
-import asyncpg
 import datetime
 import time
 
